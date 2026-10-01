@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leon Roofing of SWFL | Residential &amp; Commercial Roofing in North Fort Myers, FL</title>
+<meta name="description" content="Leon Roofing of SWFL — residential and commercial roofing in North Fort Myers, FL. Roof replacement, repairs, storm damage restoration & free estimates. Call (239) 628-9222.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0e1b2c; --navy2:#132740; --orange:#f2682a; --orange-d:#d6531c;
+  --ink:#1c2733; --muted:#5b6b7d; --bg:#f7f9fb; --card:#ffffff; --line:#e4eaf0;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+h1,h2,h3{font-family:'Archivo',sans-serif;line-height:1.15;letter-spacing:-.01em}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+a{text-decoration:none;color:inherit}
+img{max-width:100%}
+/* ---------- NAV ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(14,27,44,.96);backdrop-filter:blur(6px);color:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:1140px;margin:0 auto}
+.brand{font-family:'Archivo',sans-serif;font-weight:800;font-size:1.15rem;letter-spacing:.01em}
+.brand span{color:var(--orange)}
+.nav-links{display:flex;gap:26px;list-style:none;font-weight:500;font-size:.95rem}
+.nav-links a{opacity:.9}.nav-links a:hover{color:var(--orange);opacity:1}
+.nav-cta{background:var(--orange);color:#fff!important;font-weight:700;padding:10px 20px;border-radius:8px;opacity:1}
+.nav-cta:hover{background:var(--orange-d)}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.burger span{display:block;width:26px;height:3px;background:#fff;margin:5px 0;border-radius:2px}
+/* ---------- HERO ---------- */
+.hero{background:linear-gradient(120deg,var(--navy) 0%,var(--navy2) 55%,#1d3a5c 100%);color:#fff;padding:96px 0 88px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;top:-120px;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(242,104,42,.28),transparent 70%)}
+.eyebrow{display:inline-block;background:rgba(242,104,42,.16);border:1px solid rgba(242,104,42,.5);color:#ffb58a;font-weight:600;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;padding:7px 14px;border-radius:999px;margin-bottom:22px}
+.hero h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:800;max-width:640px}
+.hero h1 .accent{color:var(--orange)}
+.hero p.lead{font-size:1.15rem;max-width:600px;margin:20px 0 32px;color:#c9d6e2}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;font-weight:700;padding:15px 30px;border-radius:10px;font-size:1.02rem;transition:transform .15s ease,box-shadow .15s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--orange);color:#fff;box-shadow:0 10px 24px rgba(242,104,42,.35)}
+.btn-primary:hover{background:var(--orange-d)}
+.btn-ghost{border:2px solid rgba(255,255,255,.35);color:#fff}
+.btn-ghost:hover{border-color:#fff}
+.hero-note{margin-top:22px;font-size:.9rem;color:#9fb0c2}
+/* ---------- TRUST STRIP ---------- */
+.trust{background:#fff;border-bottom:1px solid var(--line)}
+.trust-row{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;padding:22px 0}
+.trust-item{display:flex;align-items:center;gap:10px;font-weight:600;font-size:.95rem;color:var(--navy)}
+.trust-item .tick{width:30px;height:30px;flex:0 0 30px;border-radius:50%;background:#e8f7ee;color:#1d9a4b;display:grid;place-items:center;font-weight:800}
+/* ---------- SECTIONS ---------- */
+section{padding:84px 0}
+.sec-title{font-size:clamp(1.7rem,3.4vw,2.5rem);font-weight:800;color:var(--navy);max-width:640px}
+.sec-sub{color:var(--muted);margin:14px 0 0;max-width:640px;font-size:1.05rem}
+/* ---------- SERVICES ---------- */
+#services{background:var(--bg)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:30px 26px;transition:box-shadow .2s ease,transform .2s ease}
+.card:hover{box-shadow:0 16px 34px rgba(14,27,44,.1);transform:translateY(-4px)}
+.card .icon{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--orange),#ff8f4d);display:grid;place-items:center;font-size:1.5rem;margin-bottom:18px}
+.card h3{font-size:1.12rem;margin-bottom:10px;color:var(--navy)}
+.card p{color:var(--muted);font-size:.95rem}
+/* ---------- ABOUT ---------- */
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;margin-top:44px}
+.about-grid p{color:var(--muted);margin-bottom:16px}
+.check-list{list-style:none;margin:22px 0}
+.check-list li{display:flex;gap:12px;align-items:flex-start;margin-bottom:12px;font-weight:500;color:var(--navy)}
+.check-list .tick{width:26px;height:26px;flex:0 0 26px;border-radius:50%;background:#e8f7ee;color:#1d9a4b;display:grid;place-items:center;font-weight:800;font-size:.85rem}
+.about-badge{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;border-radius:16px;padding:40px 32px;text-align:center}
+.about-badge .big{font-family:'Archivo',sans-serif;font-size:3rem;font-weight:800;color:var(--orange)}
+.about-badge p{color:#c9d6e2;margin-top:8px;font-size:.95rem}
+/* ---------- PROCESS ---------- */
+#process{background:var(--navy);color:#fff}
+#process .sec-title{color:#fff}
+#process .sec-sub{color:#a9b9c9}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:44px;counter-reset:step}
+.step{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:30px 26px;position:relative}
+.step::before{counter-increment:step;content:counter(step);position:absolute;top:22px;right:24px;font-family:'Archivo',sans-serif;font-weight:800;font-size:2.4rem;color:rgba(242,104,42,.35)}
+.step h3{color:#fff;margin-bottom:10px;font-size:1.1rem}
+.step p{color:#b7c5d3;font-size:.95rem}
+/* ---------- CONTACT ---------- */
+#contact{background:var(--bg)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:44px}
+.contact-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:36px;text-align:center}
+.contact-card h3{color:var(--navy);margin-bottom:8px}
+.contact-card p{color:var(--muted);font-size:.95rem;margin-bottom:20px}
+.contact-card .btn-primary{display:inline-block;margin:0}
+.hours{background:var(--navy);color:#fff;border-radius:14px;padding:36px}
+.hours h3{margin-bottom:14px}
+.hours ul{list-style:none;color:#c9d6e2}
+.hours li{padding:8px 0;border-bottom:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;font-size:.95rem}
+.hours li:last-child{border:0}
+/* ---------- FOOTER ---------- */
+footer{background:#0a1420;color:#8fa1b4;padding:40px 0;font-size:.9rem}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+.foot a:hover{color:#fff}
+.sticky-call{display:none;position:fixed;left:16px;right:16px;bottom:16px;z-index:60;background:var(--orange);color:#fff;text-align:center;font-weight:800;font-size:1.05rem;padding:15px;border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,.3)}
+@media(max-width:900px){
+  .grid,.steps{grid-template-columns:1fr 1fr}
+  .about-grid,.contact-grid{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .nav-links{position:absolute;top:100%;left:0;right:0;background:var(--navy);flex-direction:column;padding:18px 20px;gap:16px;display:none}
+  .nav-links.open{display:flex}
+  .burger{display:block}
+  .grid,.steps{grid-template-columns:1fr}
+  section{padding:60px 0}
+  .hero{padding:70px 0 64px}
+  .sticky-call{display:block}
+  footer{padding-bottom:96px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a class="brand" href="#top">Leon Roofing <span>of SWFL</span></a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">Why Us</a></li>
+      <li><a href="#process">How It Works</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="nav-cta" href="tel:+12396289222">Call (239) 628-9222</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">North Fort Myers, Florida</span>
+    <h1>A Roof You Can Trust Over Your <span class="accent">Head</span> — Installed Right the First Time</h1>
+    <p class="lead">Leon Roofing of SWFL provides residential and commercial roofing across Southwest Florida: full replacements, expert repairs, and storm damage restoration — done by licensed professionals, on schedule and on budget.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="tel:+12396289222">Call (239) 628-9222</a>
+      <a class="btn btn-ghost" href="mailto:leonroofingofswfl@gmail.com?subject=Free%20Roofing%20Estimate">Email for a Free Estimate</a>
+    </div>
+    <p class="hero-note">Free, no-pressure estimates &nbsp;•&nbsp; Residential &amp; commercial &nbsp;•&nbsp; Se habla español</p>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="wrap trust-row">
+    <div class="trust-item"><span class="tick">✓</span> Licensed &amp; Insured (CCC1337538)</div>
+    <div class="trust-item"><span class="tick">✓</span> Locally Owned in SWFL</div>
+    <div class="trust-item"><span class="tick">✓</span> Free Estimates</div>
+    <div class="trust-item"><span class="tick">✓</span> Written Workmanship Warranty</div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <h2 class="sec-title">Roofing Services for Homes &amp; Businesses</h2>
+    <p class="sec-sub">From a small leak to a full replacement, our certified crew handles every type of roofing project — with clean job sites and clear communication from start to finish.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="icon">🏠</div>
+        <h3>Roof Replacement</h3>
+        <p>Complete tear-off and installation of shingle, tile, and metal roofing systems built to handle Florida's sun, wind, and storms.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🔧</div>
+        <h3>Roof Repairs</h3>
+        <p>Fast, honest repairs for leaks, missing shingles, flashing failures, and wind damage — fixed right, with no upselling.</p>
+      </div>
+      <div class="card">
+        <div class="icon">⛈️</div>
+        <h3>Storm Damage Restoration</h3>
+        <p>Hurricane and storm damage assessments, emergency tarping, and full restoration — including help documenting insurance claims.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🏢</div>
+        <h3>Commercial Roofing</h3>
+        <p>Flat and low-slope roofing installation, repair, and maintenance for offices, warehouses, retail, and multi-family properties.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🔍</div>
+        <h3>Roof Inspections</h3>
+        <p>Thorough inspections with photos and plain-English findings — know exactly what your roof needs before you spend a dollar.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🛡️</div>
+        <h3>Maintenance Programs</h3>
+        <p>Regular cleanings, sealant checks, and tune-ups that extend your roof's life and protect your warranty.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2 class="sec-title">Your Local SWFL Roofing Team</h2>
+    <div class="about-grid">
+      <div>
+        <p>Leon Roofing of SWFL is a locally owned roofing company based in North Fort Myers, serving homeowners and businesses across Southwest Florida. We're certified roofing contractors — licensed and insured to handle both residential and commercial projects.</p>
+        <p>Southwest Florida roofs take a beating: blazing sun, driving rain, and hurricane winds. We build and repair roofs specifically for this climate, and we stand behind every job with a written workmanship warranty.</p>
+        <ul class="check-list">
+          <li><span class="tick">✓</span> Certified Roofing Contractor — FL License CCC1337538</li>
+          <li><span class="tick">✓</span> Residential &amp; commercial expertise on one crew</li>
+          <li><span class="tick">✓</span> Free detailed estimates — no pressure, no obligation</li>
+          <li><span class="tick">✓</span> Clean job sites: your property respected daily</li>
+        </ul>
+      </div>
+      <div class="about-badge">
+        <div class="big">CCC1337538</div>
+        <p>Florida Certified Roofing Contractor<br>Licensed &amp; Insured<br>North Fort Myers, FL</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <h2 class="sec-title">Getting Your Roof Fixed Is Simple</h2>
+    <p class="sec-sub">Three steps from first call to finished roof.</p>
+    <div class="steps">
+      <div class="step">
+        <h3>1. Free Inspection</h3>
+        <p>Call or email us and we'll schedule a free, no-obligation roof inspection at a time that works for you.</p>
+      </div>
+      <div class="step">
+        <h3>2. Clear, Honest Quote</h3>
+        <p>You get a detailed written estimate — what needs doing, what it costs, and how long it takes. No surprises.</p>
+      </div>
+      <div class="step">
+        <h3>3. Professional Installation</h3>
+        <p>Our certified crew completes the work on schedule, keeps your property clean, and backs it with a written warranty.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2 class="sec-title">Get Your Free Roofing Estimate</h2>
+    <p class="sec-sub">Call us directly or send an email — we typically respond the same business day.</p>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>📞 Call or Text</h3>
+        <p>Fastest way to reach us during business hours.</p>
+        <a class="btn btn-primary" href="tel:+12396289222">(239) 628-9222</a>
+      </div>
+      <div class="contact-card">
+        <h3>✉️ Email Us</h3>
+        <p>Send photos of your roof issue for a quicker assessment.</p>
+        <a class="btn btn-primary" href="mailto:leonroofingofswfl@gmail.com?subject=Free%20Roofing%20Estimate">leonroofingofswfl@gmail.com</a>
+      </div>
+    </div>
+    <div class="hours" style="margin-top:26px">
+      <h3>Service Area &amp; Contact Info</h3>
+      <ul>
+        <li><span>Phone</span><span>(239) 628-9222</span></li>
+        <li><span>Email</span><span>leonroofingofswfl@gmail.com</span></li>
+        <li><span>Location</span><span>North Fort Myers, Florida</span></li>
+        <li><span>License</span><span>CCC1337538 — Certified Roofing Contractor</span></li>
+        <li><span>Service Area</span><span>North Fort Myers, Fort Myers, Cape Coral, Lehigh Acres &amp; SWFL</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>© 2026 Leon Roofing of SWFL, LLC. All rights reserved.<br>North Fort Myers, FL • FL Certified Roofing Contractor CCC1337538</div>
+    <div><a href="tel:+12396289222">Call (239) 628-9222</a> &nbsp;•&nbsp; <a href="mailto:leonroofingofswfl@gmail.com">Email</a></div>
+  </div>
+</footer>
+
+<a class="sticky-call" href="tel:+12396289222">📞 Call (239) 628-9222</a>
+
+<script>
+(function(){
+  var burger=document.getElementById('burger'),
+      links=document.getElementById('navLinks');
+  burger.addEventListener('click',function(){links.classList.toggle('open');});
+  links.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){links.classList.remove('open');});
+  });
+})();
+</script>
+</body>
+</html>
